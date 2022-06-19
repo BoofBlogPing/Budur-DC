@@ -30,7 +30,7 @@ K_G = Client(
 def button():
 	[Button.url('➕ Məni Qrupa Sal ➕', 'https://t.me/KMSozuTapBot?startgroup=a'),
         [Button.url('🛠️ Kanal', 'https://t.me/kohne_mekan_kanal'),
-	return InlineKeyboardMarkup(BUTTON)
+	return InlineKeyboardMarkup(Button)
 
 # Kullanıcı Start Komutunu Kullanınca Selam'layalım :)
 @K_G.on_message(filters.command("start"))
@@ -48,7 +48,7 @@ async def _(client, message):
 def d_or_c(user_id):
 	BUTTON = [[InlineKeyboardButton(text="✅ Doğruluk", callback_data = " ".join(["d_data",str(user_id)]))]]
 	BUTTON += [[InlineKeyboardButton(text="💪 Cesaret", callback_data = " ".join(["c_data",str(user_id)]))]]
-	return InlineKeyboardMarkup(BUTTON)
+	return InlineKeyboardMarkup(Button)
 
 # Dc Komutunu Oluşturalım
 @K_G.on_message(filters.command("dc"))
