@@ -29,8 +29,6 @@ K_G = Client(
 # Start Buttonu İcin Def Oluşturalım :)
 def button():
 	[Button.url('➕ Məni Qrupa Sal ➕', 'https://t.me/KMSozuTapBot?startgroup=a'),
-        BUTTON=[[InlineKeyboardButton(text="👨🏻‍💻 Sahibim ",url="t.me/Leytenant_85")]]
-	BUTTON+=[[InlineKeyboardButton(text="📢 Qurup",url="https://t.me/sohbet_mekani_KM")]]
         [Button.url('🛠️ Kanal', 'https://t.me/kohne_mekan_kanal'),
 	return InlineKeyboardMarkup(BUTTON)
 
